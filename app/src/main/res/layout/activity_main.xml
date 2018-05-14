@@ -31,6 +31,7 @@
                 android:textSize="24sp" />
 
             <EditText
+                android:id="@+id/name_edit_text"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:hint="Enter your name here"
@@ -52,10 +53,12 @@
                 android:textSize="20sp" />
 
             <RadioGroup
+                android:id="@+id/q1_radio_group"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content">
 
                 <RadioButton
+                    android:id="@+id/a1"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="Computer"
@@ -95,6 +98,7 @@
                 android:textSize="20sp" />
 
             <RadioGroup
+                android:id="@+id/q2_radio_group"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content">
 
@@ -111,6 +115,7 @@
                     android:textSize="16sp" />
 
                 <RadioButton
+                    android:id="@+id/a2"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="Clunkers"
@@ -138,24 +143,28 @@
                 android:textSize="20sp" />
 
             <CheckBox
+                android:id="@+id/q3_a1"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="Kiwi"
                 android:textSize="16sp" />
 
             <CheckBox
+                android:id="@+id/q3_a2"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="Lobster"
                 android:textSize="16sp" />
 
             <CheckBox
+                android:id="@+id/q3_a3"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="Eggs"
                 android:textSize="16sp" />
 
             <CheckBox
+                android:id="@+id/q3_a4"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="Peanuts"
@@ -176,19 +185,21 @@
                 android:textSize="20sp" />
 
             <RadioGroup
+                android:id="@+id/q4_radio_group"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content">
 
                 <RadioButton
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="15 Yemen Road, Yemen"
+                    android:text="13 Desert Road, Yemen"
                     android:textSize="16sp" />
 
                 <RadioButton
+                    android:id="@+id/a4"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="13 Desert Road, Yemen"
+                    android:text="15 Yemen Road, Yemen"
                     android:textSize="16sp" />
 
                 <RadioButton
@@ -219,6 +230,7 @@
                 android:textSize="20sp" />
 
             <EditText
+                android:id="@+id/q5_edit_text"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:hint="Enter your answer as a character"
@@ -241,6 +253,7 @@
                 android:textSize="20sp" />
 
             <EditText
+                android:id="@+id/q6_edit_text"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:hint="Enter your answer as a number"
@@ -263,6 +276,7 @@
                 android:textSize="20sp" />
 
             <RadioGroup
+                android:id="@+id/q7_radio_group"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content">
 
@@ -285,6 +299,7 @@
                     android:textSize="16sp" />
 
                 <RadioButton
+                    android:id="@+id/a7"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="The Swing Kings"
@@ -306,10 +321,12 @@
                 android:textSize="20sp" />
 
             <RadioGroup
+                android:id="@+id/q8_radio_group"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content">
 
                 <RadioButton
+                    android:id="@+id/a8"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="Nevada"
@@ -349,24 +366,28 @@
                 android:textSize="20sp" />
 
             <CheckBox
+                android:id="@+id/q9_a1"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="M"
                 android:textSize="16sp" />
 
             <CheckBox
+                android:id="@+id/q9_a2"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="O"
                 android:textSize="16sp" />
 
             <CheckBox
+                android:id="@+id/q9_a3"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="N"
                 android:textSize="16sp" />
 
             <CheckBox
+                android:id="@+id/q9_a4"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="K"
@@ -387,6 +408,7 @@
                 android:textSize="20sp" />
 
             <RadioGroup
+                android:id="@+id/q10_radio_group"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content">
 
@@ -403,6 +425,7 @@
                     android:textSize="16sp" />
 
                 <RadioButton
+                    android:id="@+id/a10"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="Statistical Analysis and Data Reconfiguration"
@@ -421,6 +444,7 @@
             android:layout_height="wrap_content"
             android:layout_gravity="center"
             android:layout_marginTop="8dp"
+            android:onClick="submit"
             android:text="See how much FRIENDS freak you are" />
 
     </LinearLayout>
