@@ -10,7 +10,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="vertical"
-        android:padding="8dp">
+        android:padding="@dimen/main_padding">
 
         <LinearLayout
             android:layout_width="match_parent"
@@ -19,24 +19,24 @@
 
             <View
                 android:layout_width="match_parent"
-                android:layout_height="100dp"
+                android:layout_height="@dimen/logo_height"
                 android:background="@drawable/friends" />
 
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginBottom="8dp"
-                android:layout_marginTop="8dp"
-                android:text="The Hardest Friends Quiz You'll Ever Take"
-                android:textSize="24sp" />
+                android:layout_marginBottom="@dimen/margin_between"
+                android:layout_marginTop="@dimen/margin_between"
+                android:text="@string/intro"
+                android:textSize="@dimen/intro_size" />
 
             <EditText
                 android:id="@+id/name_edit_text"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:hint="Enter your name here"
+                android:hint="@string/name"
                 android:inputType="textCapWords"
-                android:textSize="24sp" />
+                android:textSize="@dimen/intro_size" />
         </LinearLayout>
 
         <LinearLayout
@@ -47,10 +47,10 @@
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginTop="8dp"
-                android:text="Q1: What word did Rachel misspell on her résumé?"
+                android:layout_marginTop="@dimen/margin_between"
+                android:text="@string/q1"
                 android:textColor="@android:color/black"
-                android:textSize="20sp" />
+                android:textSize="@dimen/question_size" />
 
             <RadioGroup
                 android:id="@+id/q1_radio_group"
@@ -61,26 +61,26 @@
                     android:id="@+id/a1"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="Computer"
-                    android:textSize="16sp" />
+                    android:text="@string/computer"
+                    android:textSize="@dimen/radio_size" />
 
                 <RadioButton
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="Rachel"
-                    android:textSize="16sp" />
+                    android:text="@string/rachel"
+                    android:textSize="@dimen/radio_size" />
 
                 <RadioButton
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="Central Perk"
-                    android:textSize="16sp" />
+                    android:text="@string/central_perk"
+                    android:textSize="@dimen/radio_size" />
 
                 <RadioButton
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="Dependable"
-                    android:textSize="16sp" />
+                    android:text="@string/dependable"
+                    android:textSize="@dimen/radio_size" />
             </RadioGroup>
         </LinearLayout>
 
@@ -92,10 +92,10 @@
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginTop="8dp"
-                android:text="Q2: What is the name of the dog in 'The One Where Chandler Doesn’t Like Dogs?'"
+                android:layout_marginTop="@dimen/margin_between"
+                android:text="@string/q2"
                 android:textColor="@android:color/black"
-                android:textSize="20sp" />
+                android:textSize="@dimen/question_size" />
 
             <RadioGroup
                 android:id="@+id/q2_radio_group"
@@ -105,27 +105,27 @@
                 <RadioButton
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="Duke"
-                    android:textSize="16sp" />
+                    android:text="@string/duke"
+                    android:textSize="@dimen/radio_size" />
 
                 <RadioButton
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="Fluffy"
-                    android:textSize="16sp" />
+                    android:text="@string/fluffy"
+                    android:textSize="@dimen/radio_size" />
 
                 <RadioButton
                     android:id="@+id/a2"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="Clunkers"
-                    android:textSize="16sp" />
+                    android:text="@string/clunkers"
+                    android:textSize="@dimen/radio_size" />
 
                 <RadioButton
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="Spike"
-                    android:textSize="16sp" />
+                    android:text="@string/spike"
+                    android:textSize="@dimen/radio_size" />
             </RadioGroup>
         </LinearLayout>
 
@@ -137,38 +137,38 @@
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginTop="8dp"
-                android:text="Q3: What food is Ross allergic to in 'The One With The Baby on the Bus?'"
+                android:layout_marginTop="@dimen/margin_between"
+                android:text="@string/q3"
                 android:textColor="@android:color/black"
-                android:textSize="20sp" />
+                android:textSize="@dimen/question_size" />
 
             <CheckBox
                 android:id="@+id/q3_a1"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Kiwi"
-                android:textSize="16sp" />
+                android:text="@string/kiwi"
+                android:textSize="@dimen/checkbox_size" />
 
             <CheckBox
                 android:id="@+id/q3_a2"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Lobster"
-                android:textSize="16sp" />
+                android:text="@string/lobster"
+                android:textSize="@dimen/checkbox_size" />
 
             <CheckBox
                 android:id="@+id/q3_a3"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Eggs"
-                android:textSize="16sp" />
+                android:text="@string/eggs"
+                android:textSize="@dimen/checkbox_size" />
 
             <CheckBox
                 android:id="@+id/q3_a4"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Peanuts"
-                android:textSize="16sp" />
+                android:text="@string/peanuts"
+                android:textSize="@dimen/checkbox_size" />
         </LinearLayout>
 
         <LinearLayout
@@ -179,10 +179,10 @@
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginTop="8dp"
-                android:text="Q4: What is the address Chandler gives Janice when he lies about moving to Yemen?"
+                android:layout_marginTop="@dimen/margin_between"
+                android:text="@string/q4"
                 android:textColor="@android:color/black"
-                android:textSize="20sp" />
+                android:textSize="@dimen/question_size" />
 
             <RadioGroup
                 android:id="@+id/q4_radio_group"
@@ -192,27 +192,27 @@
                 <RadioButton
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="13 Desert Road, Yemen"
-                    android:textSize="16sp" />
+                    android:text="@string/q4a1"
+                    android:textSize="@dimen/radio_size" />
 
                 <RadioButton
                     android:id="@+id/a4"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="15 Yemen Road, Yemen"
-                    android:textSize="16sp" />
+                    android:text="@string/q4a2"
+                    android:textSize="@dimen/radio_size" />
 
                 <RadioButton
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="93 Yemenite Street, Yemen"
-                    android:textSize="16sp" />
+                    android:text="@string/q4a3"
+                    android:textSize="@dimen/radio_size" />
 
                 <RadioButton
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="47 Yemen Street, Yemen"
-                    android:textSize="16sp" />
+                    android:text="@string/q4a4"
+                    android:textSize="@dimen/radio_size" />
             </RadioGroup>
         </LinearLayout>
 
@@ -224,19 +224,19 @@
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginTop="8dp"
-                android:text="Q5: When Joey couldn't afford to buy the full set of encyclopedias, which single volume did he buy?"
+                android:layout_marginTop="@dimen/margin_between"
+                android:text="@string/q5"
                 android:textColor="@android:color/black"
-                android:textSize="20sp" />
+                android:textSize="@dimen/question_size" />
 
             <EditText
                 android:id="@+id/q5_edit_text"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:hint="Enter your answer as a character"
+                android:hint="@string/char_ans"
                 android:inputType="textCapCharacters"
                 android:maxLength="1"
-                android:textSize="20sp" />
+                android:textSize="@dimen/edit_text_font_size" />
         </LinearLayout>
 
         <LinearLayout
@@ -247,19 +247,19 @@
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginTop="8dp"
-                android:text="Q6: How many sisters does Joey have?"
+                android:layout_marginTop="@dimen/margin_between"
+                android:text="@string/q6"
                 android:textColor="@android:color/black"
-                android:textSize="20sp" />
+                android:textSize="@dimen/question_size" />
 
             <EditText
                 android:id="@+id/q6_edit_text"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:hint="Enter your answer as a number"
+                android:hint="@string/num_ans"
                 android:inputType="number"
                 android:maxLength="1"
-                android:textSize="20sp" />
+                android:textSize="@dimen/edit_text_font_size" />
         </LinearLayout>
 
         <LinearLayout
@@ -270,10 +270,10 @@
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginTop="8dp"
-                android:text="Q7: What is the name of the band at Chandler and Monica's wedding?"
+                android:layout_marginTop="@dimen/margin_between"
+                android:text="@string/q7"
                 android:textColor="@android:color/black"
-                android:textSize="20sp" />
+                android:textSize="@dimen/question_size" />
 
             <RadioGroup
                 android:id="@+id/q7_radio_group"
@@ -283,27 +283,27 @@
                 <RadioButton
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="The Smelly Cats"
-                    android:textSize="16sp" />
+                    android:text="@string/q7a1"
+                    android:textSize="@dimen/radio_size" />
 
                 <RadioButton
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="Carcass"
-                    android:textSize="16sp" />
+                    android:text="@string/q7a2"
+                    android:textSize="@dimen/radio_size" />
 
                 <RadioButton
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="The Jungle Kids"
-                    android:textSize="16sp" />
+                    android:text="@string/q7a3"
+                    android:textSize="@dimen/radio_size" />
 
                 <RadioButton
                     android:id="@+id/a7"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="The Swing Kings"
-                    android:textSize="16sp" />
+                    android:text="@string/q7a4"
+                    android:textSize="@dimen/radio_size" />
             </RadioGroup>
         </LinearLayout>
 
@@ -315,10 +315,10 @@
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginTop="8dp"
-                android:text="Q8: Which state does Ross have listed twice in 'The One Where Chandler Doesn’t Like Dogs?'"
+                android:layout_marginTop="@dimen/margin_between"
+                android:text="@string/q8"
                 android:textColor="@android:color/black"
-                android:textSize="20sp" />
+                android:textSize="@dimen/question_size" />
 
             <RadioGroup
                 android:id="@+id/q8_radio_group"
@@ -329,26 +329,26 @@
                     android:id="@+id/a8"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="Nevada"
-                    android:textSize="16sp" />
+                    android:text="@string/nevada"
+                    android:textSize="@dimen/radio_size" />
 
                 <RadioButton
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="Delaware"
-                    android:textSize="16sp" />
+                    android:text="@string/delaware"
+                    android:textSize="@dimen/radio_size" />
 
                 <RadioButton
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="Arizona"
-                    android:textSize="16sp" />
+                    android:text="@string/arizona"
+                    android:textSize="@dimen/radio_size" />
 
                 <RadioButton
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="Kentucky"
-                    android:textSize="16sp" />
+                    android:text="@string/kentucky"
+                    android:textSize="@dimen/radio_size" />
             </RadioGroup>
         </LinearLayout>
 
@@ -360,38 +360,38 @@
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginTop="8dp"
-                android:text="Q9: What are the three Scrabble tiles Marcel swallows in 'The One With Two Parts?'"
+                android:layout_marginTop="@dimen/margin_between"
+                android:text="@string/q9"
                 android:textColor="@android:color/black"
-                android:textSize="20sp" />
+                android:textSize="@dimen/question_size" />
 
             <CheckBox
                 android:id="@+id/q9_a1"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="M"
-                android:textSize="16sp" />
+                android:text="@string/m"
+                android:textSize="@dimen/checkbox_size" />
 
             <CheckBox
                 android:id="@+id/q9_a2"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="O"
-                android:textSize="16sp" />
+                android:text="@string/o"
+                android:textSize="@dimen/checkbox_size" />
 
             <CheckBox
                 android:id="@+id/q9_a3"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="N"
-                android:textSize="16sp" />
+                android:text="@string/n"
+                android:textSize="@dimen/checkbox_size" />
 
             <CheckBox
                 android:id="@+id/q9_a4"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="K"
-                android:textSize="16sp" />
+                android:text="@string/k"
+                android:textSize="@dimen/checkbox_size" />
         </LinearLayout>
 
         <LinearLayout
@@ -402,10 +402,10 @@
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginTop="8dp"
-                android:text="Q10: What is Chandler Bing's job title?"
+                android:layout_marginTop="@dimen/margin_between"
+                android:text="@string/q10"
                 android:textColor="@android:color/black"
-                android:textSize="20sp" />
+                android:textSize="@dimen/question_size" />
 
             <RadioGroup
                 android:id="@+id/q10_radio_group"
@@ -415,27 +415,27 @@
                 <RadioButton
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="Management Information Systems Director"
-                    android:textSize="16sp" />
+                    android:text="@string/q10a1"
+                    android:textSize="@dimen/radio_size" />
 
                 <RadioButton
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="Customer Support Specialist"
-                    android:textSize="16sp" />
+                    android:text="@string/q10a2"
+                    android:textSize="@dimen/radio_size" />
 
                 <RadioButton
                     android:id="@+id/a10"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="Statistical Analysis and Data Reconfiguration"
-                    android:textSize="16sp" />
+                    android:text="@string/q10a3"
+                    android:textSize="@dimen/radio_size" />
 
                 <RadioButton
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="Information Technology Coordinator"
-                    android:textSize="16sp" />
+                    android:text="@string/q10a4"
+                    android:textSize="@dimen/radio_size" />
             </RadioGroup>
         </LinearLayout>
 
@@ -443,9 +443,9 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_gravity="center"
-            android:layout_marginTop="8dp"
+            android:layout_marginTop="@dimen/margin_between"
             android:onClick="submit"
-            android:text="See how much FRIENDS freak you are" />
+            android:text="@string/button_content" />
 
     </LinearLayout>
 
